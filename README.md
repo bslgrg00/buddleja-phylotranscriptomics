@@ -25,7 +25,6 @@ Scripts for the analyses in:
 | `scripts/08_dating.sh` | treePL, SortaDate, and BEAST 2 |
 | `helpers/compare_astral_trees.py` | Compares ASTRAL trees from collapsed and uncollapsed gene trees |
 | `helpers/restore_bootstrap_support.py` | Restores bootstrap support to TreeShrink-trimmed trees |
-| `helpers/mask_tips_by_taxonID_transcripts.py` | Yang and Smith masking script adapted for CDS |
 | `data/taxon_names.txt` | Accession code and taxon name |
 | `data/taxon_file.txt` | Ingroup (IN) and outgroup (OUT) taxa for `prune_paralogs_MO.py` |
 

@@ -76,4 +76,4 @@ Code is released under the MIT License. Data on Zenodo are released under CC BY 
 
 ## Contact
 
-Jia Ge (gejia@mail.kib.ac.cn)
+Bishal Gurung (bsl.grg1996@gmail.com)

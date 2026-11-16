@@ -6,6 +6,7 @@ set -euo pipefail
 REPO=$(cd "$(dirname "$0")/.." && pwd)
 THREADS=32
 PDC=path/to/phylogenomic_dataset_construction/scripts
+export PYTHONPATH=$PDC:${PYTHONPATH:-}      # helpers import Yang and Smith modules
 
 mkdir -p 06_blast 06_clusters 07_trees 07_treeshrink 07_masked 07_cut 08_MO
 
@@ -43,7 +44,7 @@ done
 python $PDC/tree_shrink_wrapper_update.py 07_trees raxml_bs.tre 0.05 07_treeshrink
 python $REPO/helpers/restore_bootstrap_support.py 07_trees 07_treeshrink raxml_bs.tre tt tt_bs.tre
 for f in 07_treeshrink/*.tt_bs.tre; do cp $f 07_masked/$(basename $f .tt_bs.tre).tt; done
-python $REPO/helpers/mask_tips_by_taxonID_transcripts.py 07_masked 07_trees y
+python $PDC/mask_tips_by_taxonID_transcripts.py 07_masked 07_trees y
 python $PDC/cut_long_internal_branches.py 07_masked tt.mm 0.5 17 07_cut
 
 for TIER in 10:27 20:24 30:21; do       # max missing taxa (%) : min ingroup taxa (of 30)

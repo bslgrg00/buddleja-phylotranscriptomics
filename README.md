@@ -2,7 +2,7 @@
 
 Scripts for the analyses in:
 
-> Gurung, B., J. Liu, F. R. Rahaingoson, F. Yang, G. Chen, and J. Ge. Phylotranscriptomics reveals multiple sources of gene tree discordance in the rapid radiation of Asian *Buddleja*. *American Journal of Botany* (submitted).
+> Gurung, B., J. Liu, F. R. Rahaingoson, F. Yang, G. Chen, and J. Ge. Phylotranscriptomics reveals multiple sources of gene tree discordance in the rapid radiation of Asian *Buddleja*. *xxx* (submitted).
 
 - Data (assemblies, alignments, trees, and results): Zenodo, https://doi.org/10.5281/zenodo.24182112
 - Raw reads: NGDC Genome Sequence Archive, CRA052186 (BioProject PRJCA077110)
@@ -36,8 +36,8 @@ Scripts for the analyses in:
 3. Run the scripts in numerical order from one working directory, for example:
 
 ```bash
-bash path/to/Buddleja-phylotranscriptomics/scripts/01_assembly.sh
-Rscript path/to/Buddleja-phylotranscriptomics/scripts/05_MSCquartets.R
+bash path/to/buddleja-phylotranscriptomics/scripts/01_assembly.sh
+Rscript path/to/buddleja-phylotranscriptomics/scripts/05_MSCquartets.R
 ```
 
 Each script header lists its output files and the Zenodo folder that holds them.

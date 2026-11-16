@@ -1,9 +1,9 @@
 """
-restore_bootstrap_support.py (Python 2)
+restore_bootstrap_support.py
 Restores bootstrap support to TreeShrink-trimmed trees: tips removed by TreeShrink
 are pruned from the original RAxML bootstrap tree.
 
-Usage: python2 restore_bootstrap_support.py tree_dir treeshrink_dir [raxml_bs.tre] [tt] [tt_bs.tre]
+Usage: python restore_bootstrap_support.py tree_dir treeshrink_dir [raxml_bs.tre] [tt] [tt_bs.tre]
 Output: treeshrink_dir/<cluster>.tt_bs.tre
 """
 
@@ -94,7 +94,7 @@ def main(tree_dir, ts_dir, tree_ending="raxml_bs.tre", tt_ending="tt",
 if __name__ == "__main__":
     if len(sys.argv) < 3:
         print "Usage:"
-        print "python2 restore_bootstrap_support.py <tree_dir> <treeshrink_dir> " \
+        print "python restore_bootstrap_support.py <tree_dir> <treeshrink_dir> " \
               "[tree_ending=raxml_bs.tre] [tt_ending=tt] [out_ending=tt_bs.tre]"
         sys.exit(0)
 

@@ -2,7 +2,7 @@
 
 Scripts for the analyses in:
 
-> Gurung, B., J. Liu, F. R. Rahaingoson, F. Yang, G. Chen, and J. Ge. Phylotranscriptomics reveals multiple sources of gene tree discordance in the rapid radiation of Asian *Buddleja*. *xxx* (submitted).
+> Gurung, B., J. Liu, F. R. Rahaingoson, F. Yang, G. Chen, and J. Ge. Phylotranscriptomics reveals multiple sources of gene tree discordance in the rapid radiation of Asian *Buddleja*. *xxx* (under review).
 
 - Data (assemblies, alignments, trees, and results): Zenodo, https://doi.org/10.5281/zenodo.24182112
 - Raw reads: NGDC Genome Sequence Archive, CRA052186 (BioProject PRJCA077110)
